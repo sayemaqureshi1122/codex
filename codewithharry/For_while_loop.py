@@ -40,7 +40,17 @@ print(count)
 
 ''' Q5] print right angle triangle'''
 n =int(input("enter a no.:")) 
-for i in range(0,n+1):
-    for j in range(0,i):
-        print("*")   
+for i in range(1,n+1):
+    for j in range(i):
+        print("*", end =" ")
+    print()   
+
+
+#do while loop in python
+while True:
+    print("start the game")
+    game = input("Did you win the game....tell (yes/no)")
+    if game == "yes":
+        print("Finally u won >_<")
+        break
     
