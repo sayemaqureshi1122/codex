@@ -2,18 +2,18 @@ marks = [1,2,3,4]
 print(marks)
 print(type(marks))
 # Range in List
-list = [1, 2, 3, 4, 56, 6, 7]
-print(list[ : ])
-print(list[2 : ])
-print(list[ : 7])
-print(list[0 : 7 : 3])
-print(list[-3])
-print(list[-7 : -4 : 1])
+list1 = [1, 2, 3, 4, 56, 6, 7]
+print(list1[ : ])
+print(list1[2 : ])
+print(list1[ : 7])
+print(list1[0 : 7 : 3])
+print(list1[-3])
+print(list1[-7 : -4 : 1])
 
 ''' Q1] To print the square of elements of list and store it in another list.'''
-list = [1,2,3,4]
+list2 = [1,2,3,4]
 sqrt = []
-for i in list:
+for i in list2:
     c = i * i
     sqrt.append(c)
 print(sqrt)
@@ -118,18 +118,108 @@ num = [i for i in range(51) if i % 3 == 0 and i % 5 == 0]
 print(num)
 
 '''Q19] Create a 3x3 matrix of numbers starting from 1 to 9.'''
+
 matrix = []
 count = 0
-for i in range(2):
-    row = [] 
+for i in range(3):
+    row = []
     for j in range(3):
-        row.append(count)
         count += 1
-    matrix.append(row)
-   
+        row.append(count)   
+    matrix. append(row)
 for row in matrix:
-    print(row)  
+    print(row)
     
-     
-         
+''' Q20]Create a list of integers from 1 to 20. Print all even numbers.'''
+list3 = []
+for i in range(1,21):
+    if i % 2 == 0:
+        list3.append(i)
+print(list3)
+
+''' Q21]Reverse a list without using the reverse() method.'''
+
+arr = [1, 2, 3, 4]
+new_list = []
+c = len(arr)
+# print(c)
+for i in range(len(arr)):
+    c  = arr[len(arr) - 1]
+    new_list.append(c)
+    arr.remove(c)
+    
+print(new_list)
+
+
+# without any built function
+list4 = [1, 2, 3, 4]
+count = 0
+new = []
+#to count the no. of elements subsitute of len()
+for i in list4:
+    count += 1
+# print(count)
+b = count - 1
+while b >=0:
+    val = list4[b]
+    temp = []
+    for i in new:
+        temp += [i]
+    temp += [val]
+    new = temp    
+    b -= 1
+    
+for val in new:
+    print(val)  
+    
+# with slicing
+
+nums = [1, 2, 3, 4]
+reverse = nums[ : : -1]    
+print(reverse)
+
+''' Q22]Input 5 student names and store them in a list. Then sort them alphabetically.'''
+names = []
+for i in range(5):
+    name = input("enter a name:")
+    names. append(name)
+print(names)
+names.sort()
+print(names)
+
+''' Q23]Remove all occurrences of a specific element from a list (e.g., remove all 0s).'''
+list5 = [1, 3, 4, 0]
+for i in list5:
+    if i == 0:
+        list5.remove(i) 
+print(list5)
+
+''' Q24]Find the second largest number in a list of integers.'''
+list6 = [1, 3, 5, 809, 0, 6]
+list6.sort()
+print(list6)
+print(list6[len(list6) - 2])
+
+''' Q 25] Create a tuple with 5 elements. Print the last element using negative indexing.'''
+tup = (1, 2, 3, 4, 5)
+print(tup[-1])
+
+''' Q26] Check if an element exists in a tuple.'''
+tup1 = (1, 2, 3, 0, 5)
+if 3 in tup:
+    print("yes there is 3 in the tuple")
+    
+''' Q27] Convert a tuple into a list and add a new element to it.'''
+tup2 = ("sam", "ram", "thor")
+print(tup2)
+c = list(tup2) #converting tuple into list
+print(c) 
+c.append("caption")
+d = tuple(c) #back into a tuple
+print(d)
+
+'''Q28] Swap the first and last elements of a tuple'''
+tup3 = (10, 20, 30, 40)
+tup31 =(tup3[ : : -1]) #always use slicing in tuple u cannot use append and remove wala logic unless u covert this tuple into a list
+print(tup31)
 
