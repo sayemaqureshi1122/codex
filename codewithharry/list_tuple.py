@@ -223,3 +223,71 @@ tup3 = (10, 20, 30, 40)
 tup31 =(tup3[ : : -1]) #always use slicing in tuple u cannot use append and remove wala logic unless u covert this tuple into a list
 print(tup31)
 
+''' Q29] KBC'''
+print("Sawagt hai apka KBC mai hu ABMITABH Bacchan apke sath")
+input()
+print("Chaleye shuru karte hai")
+print("Kya aap khel ke liye tayar hai? to enter dabaye")
+input()
+print("shru karte hai Vidusho ji apka sawal 100 rupay ke liye ye raha apke computer screen pe:")
+amt = 0
+list7 = ["Apke best Friend ko Gussa  apke konse dost ko dekh ke ata hai? \n1]Shafain \n2]Soumitra \n3]Tushar \n4]vedant"]
+for i in list7:
+    print(i)
+ans1  = input("ans:")
+if ans1 == "3":
+    print("Bilkul sahi jawab hai apka \n Aap jit chuke hai 100 rupay")
+    amt += 100
+    print("chalte hai next question pe..")
+    print("ye raha apke computer screen pe 250 rupay ke liye")
+    list8 = ["Q2]Apke best friend ka Zodiac sign kya hai \n1]Scropio \n2]Libra\n3]Gemini\n 4]Aries"]
+    for i in list8:
+        print(i)
+    ans2 = input("ans:")
+    if ans2 == "3":
+        print("sahi jawab isse ke sath aap jit chuke hai 350 rupay")
+        amt += 250
+        list9 = ["Q3] My one interaction with someone u do not like \n1]Soumitra \n2]Komal \n3]Yash \n4]Sejal"]
+        for i in list9:
+            print(i)
+        ans3  = input("ans:")
+        if ans3 == "2":
+            amt += 500
+            print("bilkul sahi jawab")
+        else:
+            print("galat jawab")
+    else:
+        print("galat jawab")
+else:
+    print("galat jawab")
+print(f"isse ke sath aap jit chuke hai pure {amt} rupay")
+amt = 0    
+questions = ["Q1]Apke best Friend ko Gussa  apke konse dost ko dekh ke ata hai? 1]Shafain 2]Soumitra 3]Tushar4]vedant " , "Q2]Apke best friend ka Zodiac sign kya hai 1]Scropio 2]Libra 3]Gemini 4]Aries", " Q3] My one interaction with someone u do not like ]Soumitra 2]Komal 3]Yash  4]Sejal"]
+print("apka sawal 100 rupay ke liye:\n", questions[0])
+ans1  = input("ans:")
+if ans1 == "3":
+    print("bilkul sahi jawab")
+    amt += 100
+    print("apka sawal 250 rupat ke liye :\n", questions[1])
+    ans2 = input("ans:")
+    if ans2 == "3":
+        print("correct ans")
+        amt += 250
+        print("apka sawal 500 rupay ke liye: \n", questions[2])
+        ans3 = input("ans:")
+        if ans3 == "2":
+            print("correct")
+        else:
+            print("wrong")
+    else:
+        print("wrong")
+else:
+    print("wrong")
+print(f"congo aap jit chuka hai pure {amt} rupay")
+            
+        
+    
+
+        
+         
+          
