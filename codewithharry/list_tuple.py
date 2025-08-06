@@ -261,33 +261,21 @@ if ans1 == "3":
 else:
     print("galat jawab")
 print(f"isse ke sath aap jit chuke hai pure {amt} rupay")
-amt = 0    
-questions = ["Q1]Apke best Friend ko Gussa  apke konse dost ko dekh ke ata hai? 1]Shafain 2]Soumitra 3]Tushar4]vedant " , "Q2]Apke best friend ka Zodiac sign kya hai 1]Scropio 2]Libra 3]Gemini 4]Aries", " Q3] My one interaction with someone u do not like ]Soumitra 2]Komal 3]Yash  4]Sejal"]
-print("apka sawal 100 rupay ke liye:\n", questions[0])
-ans1  = input("ans:")
-if ans1 == "3":
-    print("bilkul sahi jawab")
-    amt += 100
-    print("apka sawal 250 rupat ke liye :\n", questions[1])
-    ans2 = input("ans:")
-    if ans2 == "3":
+
+questions = [["fav colour","blue", "pink", "black", "brown"], ["fav food", "pizza", "burger", "pasta","maggie"]]
+ans = ["c", "d"]
+amt = 0
+level = [100, 200]
+for i in range(len(questions)):
+    print(f"question for {level[i]} rupees")
+    print(questions[i][0])
+    print(f"a. {questions[i][1]}            b.  {questions[i][2]}")
+    print(f"c. {questions[i][3]}            d.  {questions[i][4]}")
+    ans1 = input("enter our opt: ")
+    if ans1 == ans[i]:
         print("correct ans")
-        amt += 250
-        print("apka sawal 500 rupay ke liye: \n", questions[2])
-        ans3 = input("ans:")
-        if ans3 == "2":
-            print("correct")
-        else:
-            print("wrong")
+        amt += level[i]
     else:
         print("wrong")
-else:
-    print("wrong")
-print(f"congo aap jit chuka hai pure {amt} rupay")
-            
-        
-    
-
-        
-         
-          
+        break
+print(f"You have won {amt} rupees Congo")
