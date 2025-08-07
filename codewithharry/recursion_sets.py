@@ -44,4 +44,19 @@ def natural(n):
         return n + natural(n - 1)
     
 print(natural(4))
+
+
+print("hello", "world")
+print(1,2,3,4,5)
+
+for i in range(1,6):
+    print( f"{i} - {i * i}")
+    
+ip =input().strip().split()
+print(ip)
+com = "sam"
+web = "q"
+print(input())
+
+
             
