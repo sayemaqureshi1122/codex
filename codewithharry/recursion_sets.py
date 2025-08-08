@@ -45,18 +45,20 @@ def natural(n):
     
 print(natural(4))
 
-
-print("hello", "world")
-print(1,2,3,4,5)
-
-for i in range(1,6):
-    print( f"{i} - {i * i}")
+# Q6] to reverse a string    
+def reverse_string(s):
+    if len(s) == 0:
+        return ""
+    return reverse_string(s[1: ]) + s [0]
     
-ip =input().strip().split()
-print(ip)
-com = "sam"
-web = "q"
-print(input())
+print(reverse_string("magic"))
 
+# Q7] Print numbers from 1 to n using recursion.
+def print_asc(n):
+    if n == 0:
+        return 0
+    print(n)
+    return  
+print(print_asc(5))
 
             
