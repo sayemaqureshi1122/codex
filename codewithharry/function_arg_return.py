@@ -69,4 +69,35 @@ def get_items_in_bag(*names):
     
 h = get_items_in_bag("pen", "Notebook", "charger")
 print(h)
+     
+#Q9] Avg of three numbers
+def avg_num(a, b, c):
+    avg = (a + b + c) / 3
+    return avg
+d = avg_num(4, 2, 7)
+print(d)
+
+# Q10] to print the len of parameter list
+def to_print_len(s):
+    print(len(s))
     
+to_print_len("sayema")
+
+# Q11] to print element of list indivisually
+def print_ele(s):
+    for i in s:
+        print(i)
+print_ele("sayema")
+
+# Q12] find factorial of n
+def factorial(n):
+    return n * (n - 1)
+
+c = factorial(7)
+print(c)
+
+# Q13] convert usd to inr
+def convert_money(n):
+     return n * 87.58
+m = convert_money(2)
+print(m)
