@@ -61,12 +61,12 @@ def print_asc(n):
     return  
 print(print_asc(5))
 
-#Q8] 
-list11 = [1, 2, 3, 1]
-for i in list11:
-    if i  == i:
-        list11.remove(i)
-print(list11)
+# #Q8] 
+# list11 = [1, 2, 3, 1]
+# for i in list11:
+#     if i  == i:
+#         list11.remove(i)
+# print(list11)
         
 
             
