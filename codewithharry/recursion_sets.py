@@ -67,6 +67,25 @@ for i in list11:
     if i  == i:
         list11.remove(i)
 print(list11)
-        
+# Q9] sum of n natural numbers       
+def sum_of_natural(n):
+    if n == 0:
+        return 0
+    print(n, end = " ") 
+    return sum_of_natural(n - 1) + n
 
-            
+sum = sum_of_natural(3)
+print()
+print(sum)
+
+# Q10] write a recursive function to print all the elements in the list
+list1122 = ["thor", "ironman", "spiderman", "caption america", "black widow"]
+def ele(list, i):
+    if i == len(list):
+        return "Done with the execution"
+    print(list[i])
+    return ele(list , i + 1)
+o = ele(list1122, 0)
+print(o)
+
+    
