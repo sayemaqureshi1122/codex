@@ -87,5 +87,7 @@ def ele(list, i):
     return ele(list , i + 1)
 o = ele(list1122, 0)
 print(o)
+# Q11 ] write a code to reverse the string
+
 
     
