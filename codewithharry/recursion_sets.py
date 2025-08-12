@@ -143,6 +143,12 @@ for char in s:
         num_vowels += 1
 print(num_vowels)
 
+'''Q16] For each string in words, add ‘ed’ to the end of the word (to make the word past tense).
+Save these past tense words to a list called past_words.
+'''
 
+wrds = ["end", 'work', "play", "start", "walk", "look", "open", "rain", "learn", "clean"]
+past_wrds = [word + "ed" for word in wrds]
+print(past_wrds)
 
     
