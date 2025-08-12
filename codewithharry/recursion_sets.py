@@ -87,7 +87,19 @@ def ele(list, i):
     return ele(list , i + 1)
 o = ele(list1122, 0)
 print(o)
-# Q11 ] write a code to reverse the string
+
+#Q11]Write code to assign the number of characters in the string rv to a variable num_chars.
+
+rv = """Once upon a midnight dreary, while I pondered, weak and weary,
+    Over many a quaint and curious volume of forgotten lore,
+    While I nodded, nearly napping, suddenly there came a tapping,
+    As of some one gently rapping, rapping at my chamber door.
+    'Tis some visitor, I muttered, tapping at my chamber door;
+    Only this and nothing more."""
+
+# Write your code here!
+num_chars = len(rv)
+print(num_chars)
 
 
     
