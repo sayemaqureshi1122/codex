@@ -147,8 +147,8 @@ print(num_vowels)
 Save these past tense words to a list called past_words.
 '''
 
-wrds = ["end", 'work', "play", "start", "walk", "look", "open", "rain", "learn", "clean"]
-past_wrds = [word + "ed" for word in wrds]
+words = ["end", 'work', "play", "start", "walk", "look", "open", "rain", "learn", "clean"]
+past_wrds = [word + "ed" for word in words]
 print(past_wrds)
 
     
