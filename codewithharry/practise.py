@@ -1,5 +1,5 @@
 #1]
-print("Welcome to the Coding Village!")
+print("Welcome to the Coding Village! 🥷")
 
 #2]
 name = input("What is your name, adventurer?: ")
