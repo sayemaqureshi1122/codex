@@ -54,3 +54,6 @@ msg1 = attack("tree", "axe")
 print(msg1)
 msg2 =  attack("bird", "bow")
 print(msg2)
+
+print("I\nlove\nCodeChef")
+print("i", "love", "codechef",sep = "\n")
