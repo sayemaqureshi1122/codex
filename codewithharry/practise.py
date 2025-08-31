@@ -60,22 +60,56 @@
 
 
 
-n = int(input())
-for i in range(n+1):
-    for j in range(i):
-        print("*", end =" ")
-    print()
+# n = int(input())
+# for i in range(n+1):
+#     for j in range(i):
+#         print("*", end =" ")
+#     print()
     
-N = int(input())
-sum =0
-for i in range(1,N+1):
-    sum += 3*i
-print(sum)
+# N = int(input())
+# sum =0
+# for i in range(1,N+1):
+#     sum += 3*i
+# print(sum)
 
-num = int(input())
-# Update your code below this line
-while(num > 0):
-    i = 1
+# num = int(input())
+# # Update your code below this line
+# while(num > 0):
+#     i = 1
+#     print(i*i)
+#     i += 1
+#     num -= 1
+for i in range (1,6):
     print(i*i)
-    i += 1
-    num -= 1
+s = "Coding on CodeChef"
+print(f"Coding - {len("coding")}")
+print(f"on - {len("on")}")
+print(f"CodeChef - {len("CodeChef")}")
+print(f"{s} - {len(s)}")
+
+a = 15
+if a > 10:
+    print("u")
+if a > 5:
+    print("v")
+    
+    
+a, b, c = map(int, input().split())
+if a < b and b < c and a < c :
+    print("increasing")
+elif a > b and b > c and a > c:
+    print("decreasing")
+else:
+    print("neither")
+    
+my_tuple = (1,2,3)
+print(my_tuple)
+
+student_grades = {"Alice": 85, "Bob": 72, "Charlie": 90, "David": 65, "Eva": 88, "John": 45}
+
+# Complete the code 
+name = input()
+if name in student_grades:
+    print(student_grades[name])
+else:
+    print("Not Found")
