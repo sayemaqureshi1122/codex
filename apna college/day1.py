@@ -43,10 +43,18 @@
 
 #patterns using for loop
 
-i = 1
-num = int(input())
-while i <= num:
-    print(i * "*")
-    i += 1
+# i = 1
+# num = int(input())
+# while i <= num:
+#     print(i * "*")
+#     i += 1
+
+## or
+num1 = int(input())   
+for i in range(1,num1+1):
+    print("*" * i)
+      
+# num2 = int(input())
+for i in range(num1,0,-1):
+    print("*" * i)
     
-   
