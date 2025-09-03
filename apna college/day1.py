@@ -49,12 +49,15 @@
 #     print(i * "*")
 #     i += 1
 
-## or
-num1 = int(input())   
-for i in range(1,num1+1):
-    print("*" * i)
+# ## or
+# num1 = int(input())   
+# for i in range(1,num1+1):
+#     print("*" * i)
       
-# num2 = int(input())
-for i in range(num1,0,-1):
-    print("*" * i)
+# # num2 = int(input())
+# for i in range(num1,0,-1):
+#     print("*" * i)
+
+set1 = set()
+print(type(set1))
     
