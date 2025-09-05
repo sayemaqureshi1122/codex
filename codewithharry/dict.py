@@ -30,6 +30,8 @@ print(type(makrs))
 
 tup2 = "hello", "sayema", "period"
 tup3 = 1, 2, 3,4,1
+print(max(tup3))
+print(tup3.sort())
 print(len(tup2))
 print(tup2 + tup3)
 print(tup2[2])
