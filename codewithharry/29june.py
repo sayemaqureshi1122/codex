@@ -30,7 +30,7 @@ print(2%3)
 print(2//3) #floor division only give int part of division leaving the decimal part
 print(2**3) #exponential
 
-question 1: create a calc capable of performing add, sub, mul, div on two num ur program should format trh output in readable manner
+#question 1: create a calc capable of performing add, sub, mul, div on two num ur program should format trh output in readable manner
 def calc(a,b):
     operation=input("enter add/sub/mul/div to perform operation:")
     if operation == "add":
