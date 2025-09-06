@@ -1,4 +1,3 @@
-'''
 #print table
 
 for i in range(1,5):
@@ -36,7 +35,7 @@ while num > 0:
     num = num // 10          
 print(rem)
 if n== rem:
-    print(num "and" rem "are palindrome")
+    print(f"{num} and {rem} are palindrome")
 
 year=2024
 if (year%4 ==0 and year%100 !=0) or (year%400==0):
@@ -135,7 +134,7 @@ print(sq)
 ana= lambda x: x+3
 res=ana(9)
 print(res)
-'''
+
 
 num=10
 for num in range(0,num):
