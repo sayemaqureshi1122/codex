@@ -1,28 +1,28 @@
-# cities = {"delhi", "mumbai", "pune"}
-# cities2 = {"akola", "amritsar", "mumbai"}
-# cities.update(cities2)
-# print(cities)
-# cities.pop()
-# print(cities)
+cities = {"delhi", "mumbai", "pune"}
+cities2 = {"akola", "amritsar", "mumbai"}
+cities.update(cities2)
+print(cities)
+cities.pop()
+print(cities)
 
 
-# dic = {
-#     "name" : 'sayema',
-#     "age" : 45,
-#     "degree" : "B.Tech"
-# }
-# print(dic["name"])
-# print(dic.popitem())
-# print(dic.keys())
-# print(dic.values())
+dic = {
+    "name" : 'sayema',
+    "age" : 45,
+    "degree" : "B.Tech"
+}
+print(dic["name"])
+print(dic.popitem())
+print(dic.keys())
+print(dic.values())
 
-# tup = ("hello","sayema", "qureshi", [1, 2, 3])
-# tup[3][2] = 5
-# print(tup)
-# print(tup[0])
-# print(type(tup))
-# a, b, c, d = tup
-# print(a,b,c)
+tup = ("hello","sayema", "qureshi", [1, 2, 3])
+tup[3][2] = 5
+print(tup)
+print(tup[0])
+print(type(tup))
+a, b, c, d = tup
+print(a,b,c)
 
 makrs = {}
 print(type(makrs))
