@@ -1,4 +1,4 @@
-'''
+
 def fibonacci(n):
     if n <= 1:
         return n
@@ -66,7 +66,7 @@ def replace_pi(s):
 text = "hipi"
 result = replace_pi(text)
 print(result)
-'''
+
 # power of 2 return true if not false
 def power(n):
     if n == 1:
