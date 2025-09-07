@@ -11,14 +11,14 @@ for i in arr:
 print(c)
 print(d)
 
-# n=[1,2,3,4]
-# for i in n:
-#     if i %2 ==0:
-#         print("Fizz")
-#     if i % 3==0:
-#         print("Buzz")
-#     if i % 5==0:
-#         print("fizzbuzz")
+n=[1,2,3,4]
+for i in n:
+    if i %2 ==0:
+        print("Fizz")
+    if i % 3==0:
+        print("Buzz")
+    if i % 5==0:
+        print("fizzbuzz")
         
         
 # marks=int(input("enter marks:"))
