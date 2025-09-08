@@ -13,30 +13,30 @@ if marks >=60:
 else:
     print("fail")
 
-# a=1
-# b=2
-# c=3
-# if a > b and a>c:
-#     print(a)
-# if b > a and b > c:
-#     print(b)
-# if c > a and c > a:
-#     print(c)
+a=1
+b=2
+c=3
+if a > b and a>c:
+    print(a)
+if b > a and b > c:
+    print(b)
+if c > a and c > a:
+    print(c)
     
-# year=2000
-# if (year%4 ==0 and year%100 !=0) or (year%400==0):
-#     print(year, " is a leap year")
-# else:
-#     print( year,"not a leap year")
+year=2000
+if (year%4 ==0 and year%100 !=0) or (year%400==0):
+    print(year, " is a leap year")
+else:
+    print( year,"not a leap year")
 
-# #reverse a int
-# n = int(input("enter a number: "))
-# res = 0
-# while n >= 0:
-#     d = n % 10
-#     res = res * 10 + d
-#     n = n // 10
-# print(res)
+#reverse a int
+n = int(input("enter a number: "))
+res = 0
+while n >= 0:
+    d = n % 10
+    res = res * 10 + d
+    n = n // 10
+print(res)
  
 
 # # Q1] to print GM,GA,GE greetings
