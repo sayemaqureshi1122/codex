@@ -39,21 +39,21 @@ while n >= 0:
 print(res)
  
 
-# # Q1] to print GM,GA,GE greetings
+# Q1] to print GM,GA,GE greetings
 
-# #note - in this code make sure to change dt of time as in string it goes serially ex: if "10:00" and "12:00"
-# # it will give 10 greater s 0 comes first so it is advisable to convert iy=t into int to get better results
-# import time
-# ct=int(time.strftime("%H:%M"))
-# print(ct)
-# if ct>"00:00" and ct < "12:00":
-#     print("GM")
-# elif ct > "12:00" and ct <= "16:00":
-#     print("GA ")
-# elif ct > "16:00" and ct <= "19:00":
-#     print("GE")
-# else:
-#     print("GN")
+#note - in this code make sure to change dt of time as in string it goes serially ex: if "10:00" and "12:00"
+# it will give 10 greater s 0 comes first so it is advisable to convert iy=t into int to get better results
+import time
+ct=int(time.strftime("%H:%M"))
+print(ct)
+if ct>"00:00" and ct < "12:00":
+    print("GM")
+elif ct > "12:00" and ct <= "16:00":
+    print("GA ")
+elif ct > "16:00" and ct <= "19:00":
+    print("GE")
+else:
+    print("GN")
    
 # #optimized code
 # import time
