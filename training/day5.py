@@ -55,27 +55,27 @@ elif ct > "16:00" and ct <= "19:00":
 else:
     print("GN")
    
-# #optimized code
-# import time
-# cut=time.strftime("%H:%M")
-# hrs=int(time.strftime("%H"))
-# min=int(time.strftime("%M"))
-# if 5 < hrs <= 12:
-#     print("gm")
-# elif 12 < hrs < 16:
-#     print("ga")
-# elif 16 < hrs < 19:
-#     print("ge")
-# else:
-#     print("gn")
+#optimized code
+import time
+cut=time.strftime("%H:%M")
+hrs=int(time.strftime("%H"))
+min=int(time.strftime("%M"))
+if 5 < hrs <= 12:
+    print("gm")
+elif 12 < hrs < 16:
+    print("ga")
+elif 16 < hrs < 19:
+    print("ge")
+else:
+    print("gn")
     
-# # Q2] Given three inputs that are stored in the variables a, b, and c.
-# # You need to print a a times and b b times  in a single line separated by c.
-# a = input()
-# b = input()
-# c = input()
-# ca = int(a)
-# cb = int(b)
-# print((a*ca) + c + (b*cb))
+# Q2] Given three inputs that are stored in the variables a, b, and c.
+# You need to print a a times and b b times  in a single line separated by c.
+a = input()
+b = input()
+c = input()
+ca = int(a)
+cb = int(b)
+print((a*ca) + c + (b*cb))
 
 
