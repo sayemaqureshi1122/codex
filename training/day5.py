@@ -1,17 +1,17 @@
-# marks=int(input("enter marks:"))
-# if marks >=60:
-#     if marks>=70:
-#         if marks>=80:
-#             if marks>=90:
-#                 print("A")
-#             else:
-#                 print("B")
-#         else:
-#             print("C")
-#     else:
-#         print("D")
-# else:
-#     print("fail")
+marks=int(input("enter marks:"))
+if marks >=60:
+    if marks>=70:
+        if marks>=80:
+            if marks>=90:
+                print("A")
+            else:
+                print("B")
+        else:
+            print("C")
+    else:
+        print("D")
+else:
+    print("fail")
 
 # a=1
 # b=2
