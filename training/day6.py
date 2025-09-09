@@ -1,11 +1,11 @@
-# #print triangle pattern
-# row=int(input("enter number of rows"))
-# # for i in range(1,row+1):
-# #     print("*"*i)
-    
-# #print mirror triangle pattern
+#print triangle pattern
+row=int(input("enter number of rows"))
 # for i in range(1,row+1):
-#         print(" "*(row-i) + "*"*i)
+#     print("*"*i)
+    
+#print mirror triangle pattern
+for i in range(1,row+1):
+        print(" "*(row-i) + "*"*i)
 
 #ARRAY
 # arr = [1,2,3,4]
