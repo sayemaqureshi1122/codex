@@ -29,14 +29,14 @@ if (year%4 ==0 and year%100 !=0) or (year%400==0):
 else:
     print( year,"not a leap year")
 
-# #reverse a int
-# n = int(input("enter a number: "))
-# res = 0
-# while n >= 0:
-#     d = n % 10
-#     res = res * 10 + d
-#     n = n // 10
-# print(res)
+#reverse a int
+n = int(input("enter a number: "))
+res = 0
+while n >= 0:
+    d = n % 10
+    res = res * 10 + d
+    n = n // 10
+print(res)
  
 
 # Q1] to print GM,GA,GE greetings
