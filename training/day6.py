@@ -7,27 +7,27 @@ row=int(input("enter number of rows"))
 for i in range(1,row+1):
         print(" "*(row-i) + "*"*i)
 
-#ARRAY
-# arr = [1,2,3,4]
-# sum = 0
-# for i in arr:
-#     sum += i
-# print(sum)
-# avg = sum / len(arr)
-# print(avg)
-#or taking arr as in input
-# arr = []
-# sum=0
-# print("print 5 numbers: ")
-# for i in range(5):
-#     num=int(input(f"enter number{i}: "))
-#     arr.append(num)
-# print(arr)
-# for i in arr:
-#     sum += i
-# print("sum of array:",sum)
-# avg=sum/5
-# print(avg)
+ARRAY
+arr = [1,2,3,4]
+sum = 0
+for i in arr:
+    sum += i
+print(sum)
+avg = sum / len(arr)
+print(avg)
+or taking arr as in input
+arr = []
+sum=0
+print("print 5 numbers: ")
+for i in range(5):
+    num=int(input(f"enter number{i}: "))
+    arr.append(num)
+print(arr)
+for i in arr:
+    sum += i
+print("sum of array:",sum)
+avg=sum/5
+print(avg)
 
 # #to print table
 # t=int(input("enter a number: "))
