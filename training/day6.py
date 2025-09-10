@@ -29,11 +29,11 @@ print("sum of array:",sum)
 avg=sum/5
 print(avg)
 
-# #to print table
-# t=int(input("enter a number: "))
-# print(f"to print table of {t}")
-# for i in range(1,11):
-#     print(f"{t} X {i} = {t*i}")
+#to print table
+t=int(input("enter a number: "))
+print(f"to print table of {t}")
+for i in range(1,11):
+    print(f"{t} X {i} = {t*i}")
     
 # a=4
 # n= []
