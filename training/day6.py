@@ -7,7 +7,7 @@ row=int(input("enter number of rows"))
 for i in range(1,row+1):
         print(" "*(row-i) + "*"*i)
 
-ARRAY
+#ARRAY
 arr = [1,2,3,4]
 sum = 0
 for i in arr:
@@ -15,7 +15,7 @@ for i in arr:
 print(sum)
 avg = sum / len(arr)
 print(avg)
-or taking arr as in input
+#or taking arr as in input
 arr = []
 sum=0
 print("print 5 numbers: ")
