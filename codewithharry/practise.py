@@ -168,14 +168,22 @@
 # if __name__ == "__main__":
 #     main()
 
-x = int(input("num: "))   
-i = 1
-while(i < x):
-    power = i ** 2
-    if power < x:
-        print(power, end = " ")
-    i += 1
-print()
-N = int(input("num: "))   
-for i in range(1,11):
-    print(N*i, end = " ")
+# x = int(input("num: "))   
+# i = 1
+# while(i < x):
+#     power = i ** 2
+#     if power < x:
+#         print(power, end = " ")
+#     i += 1
+# print()
+# N = int(input("num: "))   
+# for i in range(1,11):
+#     print(N*i, end = " ")
+
+set1 = {"hello", 1, 2}
+set1.add(9)
+print(set1)
+set1.remove("hello")
+print(set1)
+a = sum(set1)
+print(a)
