@@ -189,9 +189,14 @@
 # print(a)
 
 
-a = ""
-while(a):
-    print("hello")
+# a = ""
+# while(a):
+#     print("hello")
     
-    
-    
+
+name = input()
+age = int(input())
+print("The name of the person is",name, "and the age is",age)
+print("The name of the person is", name, "and the age is", age + ".")
+
+ 
