@@ -35,22 +35,22 @@ print(f"to print table of {t}")
 for i in range(1,11):
     print(f"{t} X {i} = {t*i}")
     
-# a=4
-# n= []
-# for i in range(4):
-#     num=int(input(f"enter first element of an array"))
-#     n.append(num)
-# print(n)
-# # n=[12,34,5,65]
-# # a=int(input("value:"))
-# found = False
-# for i in range(0,len(n)):
-#     if n[i] == a:
-#         print(f"the number is in the array on {i} position")
-#         found = True
-#         break 
-# if not found:
-#     print("number is not present in an array")
+a=4
+n= []
+for i in range(4):
+    num=int(input(f"enter first element of an array"))
+    n.append(num)
+print(n)
+# n=[12,34,5,65]
+# a=int(input("value:"))
+found = False
+for i in range(0,len(n)):
+    if n[i] == a:
+        print(f"the number is in the array on {i} position")
+        found = True
+        break 
+if not found:
+    print("number is not present in an array")
     
 #orrr
 
