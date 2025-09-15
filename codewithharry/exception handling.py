@@ -18,13 +18,28 @@
 #     print("invalid input")
 
 
-#FINALLY CLAUSE
+# #FINALLY CLAUSE
+# def fun1():
+#     list = [1, 2, 3, 4]
+#     try:
+#         i = int(input("enter a index: "))
+#         return(list[i])    
+#     except:
+#         return("error occurs")
+#     finally:
+#         print("i am always executed")
+# x = fun1()
+# print(x)
 
-list = [1, 2, 3, 4]
+#CUSTOM ERROR
+a = input("enter a value between 5 and 9: ")
 try:
-    i = int(input("enter a index: "))
-    print(list[i])    
-except:
-    print("error occurs")
-finally:
-    print("i am always executed")
+    if a < 5 or a > 9:
+            raise ValueError("the value is not between 5 and 9")
+finally :
+    if a == "quit":
+        print(a)
+    
+
+
+
