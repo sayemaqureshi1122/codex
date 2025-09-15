@@ -33,12 +33,15 @@
 
 #CUSTOM ERROR
 a = input("enter a value between 5 and 9: ")
-try:
-    if a < 5 or a > 9:
-            raise ValueError("the value is not between 5 and 9")
-finally :
-    if a == "quit":
-        print(a)
+if a == 'quit':
+    print(a)
+else:
+    if int(a) < 5 or int(a) > 9:
+        raise ValueError("the value is not between 5 and 9")
+    print(a)   
+
+
+    
     
 
 
