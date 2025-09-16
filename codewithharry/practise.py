@@ -200,3 +200,13 @@ print("The name of the person is",name, "and the age is",age)
 print("The name of the person is", name, "and the age is", age + ".")
 
  
+ #Your code goes here
+
+ch = input().strip()   # take input (strip removes extra spaces)
+
+if 'A' <= ch <= 'Z':      # check uppercase
+    print(1)
+elif 'a' <= ch <= 'z':    # check lowercase
+    print(0)
+else:                     # not an alphabet
+    print(-1)
