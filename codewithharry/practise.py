@@ -194,19 +194,48 @@
 #     print("hello")
     
 
-name = input()
-age = int(input())
-print("The name of the person is",name, "and the age is",age)
-print("The name of the person is", name, "and the age is", age + ".")
+# name = input()
+# age = int(input())
+# print("The name of the person is",name, "and the age is",age)
+# print("The name of the person is", name, "and the age is", age + ".")
 
  
  #Your code goes here
 
-ch = input().strip()   # take input (strip removes extra spaces)
+# ch = input().strip()   # take input (strip removes extra spaces)
 
-if 'A' <= ch <= 'Z':      # check uppercase
-    print(1)
-elif 'a' <= ch <= 'z':    # check lowercase
-    print(0)
-else:                     # not an alphabet
-    print(-1)
+# if 'A' <= ch <= 'Z':      # check uppercase
+#     print(1)
+# elif 'a' <= ch <= 'z':    # check lowercase
+#     print(0)
+# else:                     # not an alphabet
+#     print(-1)
+    
+    
+from os import *
+from sys import *
+from collections import *
+from math import *
+
+#Your code goes here
+
+basic = int(input())
+grade = input()
+if grade.isupper():
+    print("Good")
+else:
+    print("grade should be in uppercase")
+    
+if grade == "A":
+    allow = 1700
+elif grade == "B":
+    allow = 1500
+else:
+    allow = 1300
+
+hra = (20/100)*basic
+da = (50/100)*basic
+pf = (11/100)*basic
+
+total_salary = (basic+hra+da+allow)-pf
+print(round(total_salary))    
