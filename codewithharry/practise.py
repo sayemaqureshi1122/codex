@@ -272,19 +272,19 @@
 #         sum += i
 # print(sum)
 
-# #31] 
-from os import *
-from sys import *
-from collections import *
-from math import *
+# # #31] 
+# from os import *
+# from sys import *
+# from collections import *
+# from math import *
 
-#Your code goes here
-S = int(input())
-E = int(input())
-W = int(input())
-for i in range(S, E, W):
-    celsius = (i - 32)* (5/9)
-    print(f"{i} - {int(celsius)}")
+# #Your code goes here
+# S = int(input())
+# E = int(input())
+# W = int(input())
+# for i in range(S, E, W):
+#     celsius = (i - 32)* (5/9)
+#     print(f"{i} - {int(celsius)}")
 
 
 
@@ -296,3 +296,14 @@ for i in range(S, E, W):
 #         else:
 #             list1[0] = list1[1:len(list1[0])]
 #             print(list1)
+
+N = input()
+digits = [int(i) for i in N]
+sum_even = 0
+sum_odd = 0
+for i in digits:
+    if i % 2 == 0:
+       sum_even += i
+    else:
+         sum_odd += i
+print(sum_even, sum_odd, end = " ")
