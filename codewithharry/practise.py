@@ -257,12 +257,29 @@
 
 # #29]
 
-# word = input("enter a word: ").split()
-# print(word)
-# list1 = list(word)
-# print(list1[0][0])
-# operation = input("enter do you want to encrypt or decrypt the code: ")
+word = input("enter a word: ").split()
+print(word)
+list1 = list(word)
+print(list1[0][0])
+operation = input("enter do you want to encrypt or decrypt the code: ")
+for i in list1:
+    if operation == "encrypt" or "Encrypt" or "ENCRYPT":
+        if len(i) > 3:
+            list1[i].reverse()
+        else:
+            list1[0] = list1[1:len(list1[0])]
+            print(list1)
 
+# N = input()
+# digits = [int(i) for i in N]
+# sum_even = 0
+# sum_odd = 0
+# for i in digits:
+#     if i % 2 == 0:
+#        sum_even += i
+#     else:
+#          sum_odd += i
+# print(sum_even, sum_odd, end = " ")
 
 # #30]
 # N = int(input())
@@ -285,25 +302,3 @@
 # for i in range(S, E, W):
 #     celsius = (i - 32)* (5/9)
 #     print(f"{i} - {int(celsius)}")
-
-
-
-
-# for i in list1:
-#     if operation == "encrypt" or "Encrypt" or "ENCRYPT":
-#         if len(i) > 3:
-#             list1[i].reverse()
-#         else:
-#             list1[0] = list1[1:len(list1[0])]
-#             print(list1)
-
-N = input()
-digits = [int(i) for i in N]
-sum_even = 0
-sum_odd = 0
-for i in digits:
-    if i % 2 == 0:
-       sum_even += i
-    else:
-         sum_odd += i
-print(sum_even, sum_odd, end = " ")
