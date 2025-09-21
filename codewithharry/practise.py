@@ -257,15 +257,16 @@
 
 # #29]
 
-word = input("enter a word: ").split()
+word = input("enter a word: ")
 print(word)
 list1 = list(word)
-print(list1[0][0])
+print(list1)
 operation = input("enter do you want to encrypt or decrypt the code: ")
 for i in list1:
     if operation == "encrypt" or "Encrypt" or "ENCRYPT":
         if len(i) > 3:
-            list1[i].reverse()
+            list2 = list1[len(list1)::-1]
+            print(list2)
         else:
             list1[0] = list1[1:len(list1[0])]
             print(list1)
