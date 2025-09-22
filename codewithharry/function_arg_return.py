@@ -101,3 +101,11 @@ def convert_money(n):
      return n * 87.58
 m = convert_money(2)
 print(m)
+
+x = "good"
+def hello():
+    global x
+    x *= 2
+    print("hello", x)
+hello()
+    
