@@ -303,3 +303,17 @@
 # for i in range(S, E, W):
 #     celsius = (i - 32)* (5/9)
 #     print(f"{i} - {int(celsius)}")
+
+# general formula for list n-k+1, so here n = ip2, k = 3, 
+input1 = []
+input2 = int(input("enter the len of arr: "))
+for i in range(input2):
+    num = int(input("enter the element: "))
+    input1.append(num)   
+print(input1)
+count = 0
+for i in range(input2 - 3 + 1):
+    if input1[i] + input1[i+2] == input1[i+ 1]:
+        count += 1
+print(count)
+    
