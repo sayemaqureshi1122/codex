@@ -305,15 +305,26 @@
 #     print(f"{i} - {int(celsius)}")
 
 # general formula for list n-k+1, so here n = ip2, k = 3, 
-input1 = []
-input2 = int(input("enter the len of arr: "))
-for i in range(input2):
-    num = int(input("enter the element: "))
-    input1.append(num)   
-print(input1)
-count = 0
-for i in range(input2 - 3 + 1):
-    if input1[i] + input1[i+2] == input1[i+ 1]:
-        count += 1
-print(count)
-    
+# input1 = []
+# input2 = int(input("enter the len of arr: "))
+# for i in range(input2):
+#     num = int(input("enter the element: "))
+#     input1.append(num)   
+# print(input1)
+# count = 0
+# for i in range(input2 - 3 + 1):
+#     if input1[i] + input1[i+2] == input1[i+ 1]:
+#         count += 1
+# print(count)
+
+n = int(input())
+def factorail(n):
+    if n < 0:
+        return "error"
+    elif n == 0 or n == 1:
+        return 1
+    else:
+         return n * factorail(n-1)
+c = factorail(n)
+print(c)
+
