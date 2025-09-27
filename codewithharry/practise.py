@@ -317,14 +317,26 @@
 #         count += 1
 # print(count)
 
-n = int(input())
-def factorail(n):
-    if n < 0:
-        return "error"
-    elif n == 0 or n == 1:
-        return 1
-    else:
-         return n * factorail(n-1)
-c = factorail(n)
-print(c)
+# n = int(input())
+# def factorail(n):
+#     if n < 0:
+#         return "error"
+#     elif n == 0 or n == 1:
+#         return 1
+#     else:
+#          return n * factorail(n-1)
+# c = factorail(n)
+# print(c)
+
+
+# #printing x pattern
+rows = int(input("enter no. of rows: "))
+for i in range(rows):
+    for j in range(rows):
+        if i == j or j == rows - i - 1:
+            print("*", end = " ")
+        else:
+            print(" ", end = " ")
+        
+    print()
 
