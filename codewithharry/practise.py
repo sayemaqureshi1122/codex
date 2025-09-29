@@ -341,13 +341,21 @@
 #     print()
 n, num = map(int, input().split())
 arr = list(map(int, input().split()))
-def linearSearch(n: int, num: int, arr: [int]) -> int:
-    # Write your code here.
-    for i in range(n):
-        if arr[i] == num:
-            return i  
+# def linearSearch(n: int, num: int, arr: [int]) -> int:
+#     # Write your code here.
+#     for i in range(n):
+#         if arr[i] == num:
+#             return i  
+#     return -1
+# c = linearSearch(n, num, arr)
+# print(c)
+# orr
+def linear(n: int, num: int, arr: [int]) -> int:
+    if num in arr:
+        idx = arr.index(num)
+        return idx
     return -1
-c = linearSearch(n, num, arr)
+c = linear(n, num, arr)
 print(c)
 
 
