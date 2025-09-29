@@ -329,14 +329,26 @@
 # print(c)
 
 
-# #printing x pattern
-rows = int(input("enter no. of rows: "))
-for i in range(rows):
-    for j in range(rows):
-        if i == j or j == rows - i - 1:
-            print("*", end = " ")
-        else:
-            print(" ", end = " ")
+# # #printing x pattern
+# rows = int(input("enter no. of rows: "))
+# for i in range(rows):
+#     for j in range(rows):
+#         if i == j or j == rows - i - 1:
+#             print("*", end = " ")
+#         else:
+#             print(" ", end = " ")
         
-    print()
+#     print()
+n, num = map(int, input().split())
+arr = list(map(int, input().split()))
+def linearSearch(n: int, num: int, arr: [int]) -> int:
+    # Write your code here.
+    for i in range(n):
+        if arr[i] == num:
+            return i  
+    return -1
+c = linearSearch(n, num, arr)
+print(c)
+
+
 
