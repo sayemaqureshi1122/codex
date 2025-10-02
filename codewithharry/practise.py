@@ -339,8 +339,8 @@
 #             print(" ", end = " ")
         
 #     print()
-n, num = map(int, input().split())
-arr = list(map(int, input().split()))
+# n, num = map(int, input().split())
+# arr = list(map(int, input().split()))
 # def linearSearch(n: int, num: int, arr: [int]) -> int:
 #     # Write your code here.
 #     for i in range(n):
@@ -350,13 +350,16 @@ arr = list(map(int, input().split()))
 # c = linearSearch(n, num, arr)
 # print(c)
 # orr
-def linear(n: int, num: int, arr: [int]) -> int:
-    if num in arr:
-        idx = arr.index(num)
-        return idx
-    return -1
-c = linear(n, num, arr)
-print(c)
+# def linear(n: int, num: int, arr: [int]) -> int:
+#     if num in arr:
+#         idx = arr.index(num)
+#         return idx
+#     return -1
+# c = linear(n, num, arr)
+# print(c)
 
+n = 4
+s = "sam"
+print(str(n) + s)
 
 
