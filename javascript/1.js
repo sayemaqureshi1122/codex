@@ -26,7 +26,7 @@ function countnegative(arr){
 let arr = [1, -4, 5, -5, -7, -9, 0, -3];
 let ans = countnegative(arr);
 console.log(ans);
-*/
+
 //Q3] write a function that returns the largest number in an array.
 
 function findlargest(arr){
@@ -43,4 +43,18 @@ function findlargest(arr){
 }
 let arr = [1, 4, 5, 8, 7];
 let ans = findlargest(arr);
+console.log(ans);
+*/
+///orrrrr
+function largest(arr){
+    let large = 0;
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] > large){
+            large = arr[i]
+        }
+    }
+    return large;
+}
+let arr = [1, 3, 5, 7, 9, 5, 8, 11];
+let ans = largest(arr);
 console.log(ans);
