@@ -44,10 +44,10 @@ function findlargest(arr){
 let arr = [1, 4, 5, 8, 7];
 let ans = findlargest(arr);
 console.log(ans);
-*/
+
 ///orrrrr
 function largest(arr){
-    let large = 0;
+    let large = -Infinity; // or arr[0], any number that is smaller than all the no. in the arr.
     for(let i = 0; i < arr.length; i++){
         if(arr[i] > large){
             large = arr[i]
@@ -55,6 +55,20 @@ function largest(arr){
     }
     return large;
 }
-let arr = [1, 3, 5, 7, 9, 5, 8, 11];
+let arr = [1, 3, 5, 7, 0,  9, 5, 8, 11];
 let ans = largest(arr);
+console.log(ans);
+*/
+//Q4 write a function that returns the smallest element in an array.
+function smallest(arr){
+    let small = arr[0]; // or arr[0], any number that is smaller than all the no. in the arr.
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] < small){
+            small = arr[i]
+        }
+    }
+    return small;
+}
+let arr = [1, 3, 5, 7, 9, 5, 8, 11, -2, -1, -9, -8];
+let ans = smallest(arr);
 console.log(ans);

@@ -358,8 +358,9 @@
 # c = linear(n, num, arr)
 # print(c)
 
-n = 4
-s = "sam"
-print(str(n) + s)
-
-
+n = int(input())
+sum = 0
+for i in range(n):
+    b = input()
+    sum += b
+print(sum)
