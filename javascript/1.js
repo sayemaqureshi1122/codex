@@ -31,7 +31,7 @@ console.log(ans);
 
 function findlargest(arr){
     for( let i = 0; i < arr.length; i++){
-        for( let j = 0; j < arr. length; j++){
+        for( let j = 0; j < arr.length; j++){
             if(arr[j] > arr[j+1]){
                 let stack = arr[j];
                 arr[j] = arr[j+1];
@@ -58,7 +58,7 @@ function largest(arr){
 let arr = [1, 3, 5, 7, 0,  9, 5, 8, 11];
 let ans = largest(arr);
 console.log(ans);
-*/
+
 //Q4 write a function that returns the smallest element in an array.
 function smallest(arr){
     let small = arr[0]; // or arr[0], any number that is smaller than all the no. in the arr.
@@ -71,4 +71,61 @@ function smallest(arr){
 }
 let arr = [1, 3, 5, 7, 9, 5, 8, 11, -2, -1, -9, -8];
 let ans = smallest(arr);
+console.log(ans);
+
+// Q4] write the function to return the second largest element in an array.
+function second_largest(arr){
+    for(let i = 0; i < arr.length; i++){
+        for(let j = 0; j < arr.length; j++){
+            if(arr[j]< arr[j+1]){
+                let temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
+
+        }
+    }
+    return arr;
+}
+let arr = [1, 2, 5, 8, 11, -3, -6, 5, 3, 7];
+let ans = second_largest(arr);
+console.log(ans[1]);
+
+function second_largest(arr){
+    let large = 0;
+    let second_large = 0;
+    for(let i = 0; i <arr.length; i++){
+        if(arr[i] > large){
+            large = arr[i];
+        }
+    }
+    for(let j = 0; j <arr.length; j++){
+        if(arr[j] < large && arr[j] > second_large){
+            second_large = arr[j];
+
+        }
+    }
+    return(large, second_large); 
+}
+let arr = [1, 4, 6, 3, 7, 50, 34, 88, 3];
+let ans = second_largest(arr);
+console.log(ans);
+*/
+function second_largest(arr){
+    let large = 0;
+    let second_large = 0;
+    for(let i = 0; i <arr.length; i++){
+        if(arr[i] > large){
+            large = arr[i];
+        }
+    }
+    for(let j = 0; j < arr.length; j++){
+        if(arr[j] != large && arr[j] > second_large){   
+            second_large = arr[j];
+        }
+    } 
+    return(large, second_large);
+}
+let arr = [1, 4, 6, 3, 7, 50, 34, 88, 3];
+let ans = second_largest(arr);
 console.log(ans);
