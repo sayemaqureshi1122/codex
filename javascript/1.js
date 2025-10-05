@@ -73,7 +73,7 @@ let arr = [1, 3, 5, 7, 9, 5, 8, 11, -2, -1, -9, -8];
 let ans = smallest(arr);
 console.log(ans);
 
-// Q4] write the function to return the second largest element in an array.
+// Q5] write the function to return the second largest element in an array.
 function second_largest(arr){
     for(let i = 0; i < arr.length; i++){
         for(let j = 0; j < arr.length; j++){
@@ -107,25 +107,18 @@ function second_largest(arr){
     }
     return(large, second_large); 
 }
+*/
 let arr = [1, 4, 6, 3, 7, 50, 34, 88, 3];
 let ans = second_largest(arr);
 console.log(ans);
-*/
 function second_largest(arr){
     let large = 0;
     let second_large = 0;
-    for(let i = 0; i <arr.length; i++){
+    for(let i = 0; i < arr.length; i++){
         if(arr[i] > large){
+            second_large = large;
             large = arr[i];
         }
     }
-    for(let j = 0; j < arr.length; j++){
-        if(arr[j] != large && arr[j] > second_large){   
-            second_large = arr[j];
-        }
-    } 
-    return(large, second_large);
+    return second_large;
 }
-let arr = [1, 4, 6, 3, 7, 50, 34, 88, 3];
-let ans = second_largest(arr);
-console.log(ans);
