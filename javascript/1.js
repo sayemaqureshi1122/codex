@@ -128,11 +128,10 @@ function second_largest(arr){
     }
     return second_large;
 }
-*/
 
 //  printing pattern double loop
 //Q1] for printing incementing pattern.
-n = 4
+n = 4;
 for(let i = 0; i < n ; i++){
     let row = " ";
     let new1 = 0;
@@ -143,4 +142,14 @@ for(let i = 0; i < n ; i++){
     }
     console.log(row);
 }
+*/
+//Q2 print a right angle triangle.
+n = 4;
+for(let i = 0; i < n; i++){
+    let row = ""
+    for(let j = 0; j < i; j++){
+        row += "*";
 
+    }
+    console.log(row);
+}
