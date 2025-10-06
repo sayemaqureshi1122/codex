@@ -134,15 +134,13 @@ function second_largest(arr){
 n = 4;
 for(let i = 0; i < n ; i++){
     let row = " ";
-    let new1 = 0;
     for(let j = 0; j <= i; j++){ // j < i+1
-        new1 = new1+1;
-        row += " "+ new1;
+        row += j+1;
         
     }
     console.log(row);
 }
-*/
+
 //Q2 print a right angle triangle.
 n = 4;
 for(let i = 0; i < n; i++){
@@ -150,6 +148,16 @@ for(let i = 0; i < n; i++){
     for(let j = 0; j < i; j++){
         row += "*";
 
+    }
+    console.log(row);
+}
+*/
+//Q3 pattern - 1 22 333 4444
+n = 5;
+for(let i = 0; i < n; i++){
+    let row = " "
+    for(let j = 0; j <=i; j++){
+        row +=i+1;
     }
     console.log(row);
 }
