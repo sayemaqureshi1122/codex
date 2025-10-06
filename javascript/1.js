@@ -108,16 +108,22 @@ function second_largest(arr){
     return(large, second_large); 
 }
 */
-let arr = [1, 4, 6, 3, 7, 50, 34, 88, 3];
+let arr = [10, 20, 20];
 let ans = second_largest(arr);
 console.log(ans);
 function second_largest(arr){
-    let large = 0;
-    let second_large = 0;
+    let large = -Infinity;
+    let second_large = -Infinity;
+    if(arr.length < 2){
+        return null;
+    }
     for(let i = 0; i < arr.length; i++){
         if(arr[i] > large){
             second_large = large;
             large = arr[i];
+        }
+        else if(arr[i] > second_large && arr[i] != large){   //agar ye condition nhi likhe to agar second-largest , largest ke baas hai to correct ans nhi dega.
+            second_large = arr[i];
         }
     }
     return second_large;
