@@ -107,7 +107,7 @@ function second_largest(arr){
     }
     return(large, second_large); 
 }
-*/
+
 let arr = [10, 20, 20];
 let ans = second_largest(arr);
 console.log(ans);
@@ -128,3 +128,19 @@ function second_largest(arr){
     }
     return second_large;
 }
+*/
+
+//  printing pattern double loop
+//Q1] for printing incementing pattern.
+n = 4
+for(let i = 0; i < n ; i++){
+    let row = " ";
+    let new1 = 0;
+    for(let j = 0; j <= i; j++){ // j < i+1
+        new1 = new1+1;
+        row += " "+ new1;
+        
+    }
+    console.log(row);
+}
+
