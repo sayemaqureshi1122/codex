@@ -184,7 +184,8 @@ for(let i = 0; i < n ; i++){
     }
     console.log(row);
 }
-*/
+
+//Q6,7
 let n = 4;
 for(let i = 0; i < n; i++){
     let row = " ", switch1 = 1;
@@ -196,7 +197,23 @@ for(let i = 0; i < n; i++){
         else{
             switch1 = 1;
         }
-        //row += switch1; // for Q7 uncomment this and comment tehe uuper one
+        //row += switch1; // for Q7 uncomment this and comment the upper one
     }
 console.log(row);
 }
+
+//Q8] 
+let n = 4;
+let num = 0;
+for(let i = 0; i < n; i++){
+    let row = " ";
+    for(let j = 0; j <= i; j++){
+        row += num; 
+        num += 1;  
+    }
+    console.log(row);
+   
+}
+*/
+// Q9]
+
