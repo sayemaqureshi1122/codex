@@ -131,7 +131,7 @@ function second_largest(arr){
 
 //  printing pattern double loop
 //Q1] for printing incementing pattern.
-n = 4;
+let n = 4;
 for(let i = 0; i < n ; i++){
     let row = " ";
     for(let j = 0; j <= i; j++){ // j < i+1
@@ -151,7 +151,7 @@ for(let i = 0; i < n; i++){
     }
     console.log(row);
 }
-*/
+
 //Q3 pattern - 1 22 333 4444
 n = 5;
 for(let i = 0; i < n; i++){
@@ -161,3 +161,15 @@ for(let i = 0; i < n; i++){
     }
     console.log(row);
 }
+*/
+//Q4]
+let n = 3; 
+for(let i = n; i >= 0; i--){
+    let row = " ";
+    for(let j = 0; j <= i; j++ ){
+        row += j+1;
+    }
+    console.log(row);
+}
+
+
