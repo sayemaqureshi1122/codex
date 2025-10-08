@@ -214,9 +214,8 @@ for(let i = 0; i < n; i++){
     console.log(row);
    
 }
-*/
-// Q9]
 
+// Q9]
 let n = 4;
 for(let i = 0; i < n; i++){
     let row = " ";
@@ -226,6 +225,22 @@ for(let i = 0; i < n; i++){
     for(let k = 0; k < 2*i+1; k++){
         row +=k+1;
         
+    }
+    console.log(row);
+}
+*/
+//Q10]
+let n = 4;
+for(let i = 0;  i < n; i++){
+    let row = " ";
+    for(let j = 1; j <n -i; j++){
+        row += " ";
+    }
+    for(let k = 0; k <= i ;k++){
+        row += k+1;
+    }
+    for(let l = 0; l<i; l++){
+        row +=(i-l);
     }
     console.log(row);
 }
