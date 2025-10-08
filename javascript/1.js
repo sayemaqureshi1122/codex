@@ -244,7 +244,7 @@ for(let i = 0;  i < n; i++){
     }
     console.log(row);
 }
-*/
+
 //Q11]
 let n = 5;
 for(let i = 0; i < n; i++){
@@ -256,6 +256,19 @@ for(let i = 0; i < n; i++){
         else{
             row += ".";
         }
+    }
+    console.log(row);
+}
+*/
+//Q12] ulta right angle triangle
+let n = 5;
+for(let i = 0; i < n; i++){
+    let row = " ";
+    for(let j = 1; j < n-i; j++){
+                row += " ";
+    }
+    for(let k = 0; k <= i; k++){
+        row += "*";
     }
     console.log(row);
 }
