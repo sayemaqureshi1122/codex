@@ -228,7 +228,7 @@ for(let i = 0; i < n; i++){
     }
     console.log(row);
 }
-*/
+
 //Q10]
 let n = 4;
 for(let i = 0;  i < n; i++){
@@ -244,3 +244,19 @@ for(let i = 0;  i < n; i++){
     }
     console.log(row);
 }
+*/
+//Q11]
+let n = 5;
+for(let i = 0; i < n; i++){
+    let row = " ";
+    for(let j = 0; j < n; j++){
+        if(i == 0 || i == n-1 || j == 0 || j == n-1){
+                row += "*";
+            }
+        else{
+            row += ".";
+        }
+    }
+    console.log(row);
+}
+
