@@ -358,9 +358,15 @@
 # c = linear(n, num, arr)
 # print(c)
 
-n = int(input())
-sum = 0
-for i in range(n):
-    b = input()
-    sum += b
-print(sum)
+# n = int(input())
+# sum = 0
+# for i in range(n):
+#     b = input()
+#     sum += b
+# print(sum)
+
+n = 4
+for i in range(1, n+1):
+    spaces = " "*(n-i)
+    stars = "*"*i
+    print(spaces+stars)

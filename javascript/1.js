@@ -272,7 +272,7 @@ for(let i = 0; i < n; i++){
     }
     console.log(row);
 }
-*/
+
 //Q13] pura star triangle with space first
 let n = 5;
 for(let i = 0; i < n; i++){
@@ -285,3 +285,12 @@ for(let i = 0; i < n; i++){
     }
     console.log(row);
 }
+*/
+let num = 259;
+let count = 0;
+while(num > 0){
+    num = math.floor(num / 10);
+    count += 1;
+}
+console.log(count);
+console.log(12%10);
