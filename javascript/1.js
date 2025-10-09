@@ -286,11 +286,16 @@ for(let i = 0; i < n; i++){
     console.log(row);
 }
 */
-let num = 259;
-let count = 0;
-while(num > 0){
-    num = math.floor(num / 10);
+// Q14] write a function that return the number no digits in a number.
+function digitcount(num){
+    let count = 0;
+    while(num > 0){
+    num = Math.floor(num / 10);
     count += 1;
+    }
+    return count;
 }
-console.log(count);
-console.log(12%10);
+let num =258;
+let res = digitcount(num);
+console.log(res);
+
