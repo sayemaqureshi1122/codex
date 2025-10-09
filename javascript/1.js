@@ -288,14 +288,20 @@ for(let i = 0; i < n; i++){
 */
 // Q14] write a function that return the number no digits in a number.
 function digitcount(num){
+    if(num == 0){
+        return 1;
+    }
+    else if (num < 0){
+        num  = -(num)
+    }
     let count = 0;
     while(num > 0){
-    num = Math.floor(num / 10);
-    count += 1;
+        num = Math.floor(num / 10); //ye ans me quotient deta hai
+        count += 1;
     }
     return count;
 }
-let num =258;
+let num = -983;
 let res = digitcount(num);
 console.log(res);
 
