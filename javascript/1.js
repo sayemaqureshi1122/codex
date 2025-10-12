@@ -285,7 +285,7 @@ for(let i = 0; i < n; i++){
     }
     console.log(row);
 }
-
+*/
 // Q14] write a function that return the number no digits in a number.
 function digitcount(num){
     if(num == 0){
@@ -296,37 +296,38 @@ function digitcount(num){
     }
     let count = 0;
     while(num > 0){
-        num = Math.floor(num / 10); //ye ans me quotient deta hai
+        // num = Math.floor(num / 10); //ye ans me quotient deta hai
+       num = (num/ 10n); //  we can declare the numbers asbigint so it just gives back the whole number not decimal so no need to use maths.floor
         count += 1;
     }
     return count;
 }
-let num = -983;
+let num = -983n;
 let res = digitcount(num);
 console.log(res);
-*/
-//Q15] 1796. Second Largest Digit in a String
-let s = "ab23456";
-let digits = s.match(/\d/g);
-let arr = digits.map(Number)
 
-function second_largest(arr){
-    let large = -Infinity;
-    let second_large = -Infinity;
-    if(arr.length < 2){
-        return("not enough elements in an array");
-    }
-    for(let i = 0; i < arr.length;  i++){
-        if(arr[i] > large){
-            second_large = large;
-            large = arr[i];
-        }
-        if(arr[i] > second_large && arr[i] != large){
-            second_large = arr[i];
-        }
-    }
-    return second_large;
+// //Q15] 1796. Second Largest Digit in a String
+// let s = "ab23456";
+// let digits = s.match(/\d/g);
+// let arr = digits.map(Number)
 
-}
-res = second_largest(arr);
-console.log(res);
+// function second_largest(arr){
+//     let large = -Infinity;
+//     let second_large = -Infinity;
+//     if(arr.length < 2){
+//         return("not enough elements in an array");
+//     }
+//     for(let i = 0; i < arr.length;  i++){
+//         if(arr[i] > large){
+//             second_large = large;
+//             large = arr[i];
+//         }
+//         if(arr[i] > second_large && arr[i] != large){
+//             second_large = arr[i];
+//         }
+//     }
+//     return second_large;
+
+// }
+// res = second_largest(arr);
+// console.log(res);
